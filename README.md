@@ -1,2 +1,2 @@
-# recipe-app-react
-A recipe meal planner app made with react, node, mongo, express
+# nyt-react
+an app made with Node Express React Mongo

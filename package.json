@@ -1,0 +1,27 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "an app made with Node Express React Mongo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k90armstrong/nyt-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k90armstrong/nyt-react/issues"
+  },
+  "homepage": "https://github.com/k90armstrong/nyt-react#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.5"
+  }
+}
