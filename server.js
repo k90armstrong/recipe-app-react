@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config()
 var bodyParser = require("body-parser");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-mongoose.connect('mongodb://k90armstrong:' + process.env.MONGONYTPASS + '@ds235778.mlab.com:35778/nytreact');
+mongoose.connect('mongodb://' + DATABASE_USERNAME + ':' + process.env.DATABASE_PASSWORD + '@ds147985.mlab.com:47985/recipe-app');
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
